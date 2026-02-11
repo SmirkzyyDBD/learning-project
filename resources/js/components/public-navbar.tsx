@@ -9,7 +9,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from '@/components/ui/sheet';
-import { about, dashboard, home, login, register } from '@/routes';
+import { about, contact, dashboard, home, login, register } from '@/routes';
 import type { BreadcrumbItem as BreadcrumbItemType, SharedData } from '@/types';
 
 type Props = {
@@ -45,6 +45,9 @@ export function PublicNavbar({ breadcrumbs = [], canRegister = true }: Props) {
                                 </Button>
                                 <Button variant="ghost" className="justify-start" asChild>
                                     <Link href={about().url}>About</Link>
+                                </Button>
+                                <Button variant="ghost" className="justify-start" asChild>
+                                    <Link href={contact().url}>Contact</Link>
                                 </Button>
                                 {auth.user ? (
                                     <Button variant="ghost" className="justify-start" asChild>

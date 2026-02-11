@@ -9,12 +9,13 @@ import {
     CardTitle,
 } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { about, home } from '@/routes';
+import { about, contact, home } from '@/routes';
 import type { BreadcrumbItem as BreadcrumbItemType } from '@/types';
 
 const aboutBreadcrumbs: BreadcrumbItemType[] = [
     { title: 'Home', href: home().url },
     { title: 'About', href: about().url },
+    { title: 'Contact', href: contact().url },
 ];
 
 export default function About() {
